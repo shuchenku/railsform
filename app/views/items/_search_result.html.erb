@@ -1,0 +1,4 @@
+<% @items.each do |item| %>
+<%= link_to item.title, 
+    :action => 'show', :title => item.title  %></li>
+<% end %>
