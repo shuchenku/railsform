@@ -4,7 +4,10 @@ class CreateItems < ActiveRecord::Migration
       t.string :title
       t.text :description
       t.string :item_type
-
+      t.string :title
+      t.text :description
+      t.text :owner
+      t.integer :type_id
       t.timestamps null: false
     end
   end

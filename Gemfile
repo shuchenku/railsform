@@ -1,5 +1,16 @@
 source 'https://rubygems.org'
 
+# group :assets do
+
+#   # gem 'coffee-rails', '~> 3.2.1'
+
+#   # gem 'uglifier', '>= 1.0.3'
+#   # gem 'twitter-bootstrap-rails'
+# end
+
+gem 'twitter-bootstrap-rails'
+gem "therubyracer"
+gem "less-rails"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
@@ -22,6 +33,12 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
+
+gem 'faker'
+
+gem 'better_errors', '~> 2.1.1'
+gem 'binding_of_caller', '~> 0.7.2'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

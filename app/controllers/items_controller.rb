@@ -3,12 +3,14 @@ class ItemsController < ApplicationController
 
   # GET /items
   # GET /items.json
-  def index   
+  def index
+
     if params[:search]
-      @items = Item.search(params[:search]).order("created_at DESC")
+      @items = Item.search(params[:search],params[:type]).order("created_at DESC")
     else
       @items = Item.order("created_at DESC")
     end
+
   end
 
   # GET /items/1
@@ -66,7 +68,7 @@ class ItemsController < ApplicationController
   end
 
   def search
-    @items = Item.search(params[:search])
+    @items = Item.search(params[:search],params[:type])
     # respond_to do |format|
     #   format.html {redirect_to 'items/search'}
     # end
